@@ -5,6 +5,7 @@ Pourquoi ne donne-t-on pas accès directement aux fichiers bruts à tout le mond
 
 Pour comprendre le fonctionnement d'un projet de données (collecte, traitement, mise à disposition), le plus simple est de le comparer à **un grand restaurant**.
 
+
 ---
 
 ## 1. De la livraison brute à l'assiette : le parcours de la donnée
@@ -35,6 +36,7 @@ Pour comprendre le fonctionnement d'un projet de données (collecte, traitement,
 > Si le chef change de fournisseur de tomates ou achète un nouveau four en cuisine, le client en salle doit toujours recevoir la même salade au menu. En informatique, tant que le format final exposé est respecté, on peut améliorer les calculs internes sans casser les outils des utilisateurs.
 
 ---
+
 
 ## 3. En résumé : qui travaille où ?
 
