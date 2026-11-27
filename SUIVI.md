@@ -52,8 +52,13 @@ Pour éviter de devoir faire défiler toute la page pour lire les dernières nou
 * **3. Tempête de cerveau sur processus global de fourniture du fichier Openair 'Espaces Aériens' :**
   * Un "One Pager" pour faciliter la communication
   * Des idées de vulgarisation sur le thème de la gestion de données qui est au coeur de ce processus
-    
-* **4. Mockup sur une application permettant d'alimenter à l'utilisateur de 'signer' son vol**
+
+* **4. Comment mettre en place une solution d'analyse données interactive**
+* * **Suivi :**
+* [ ] **Zey-Adel** Se renseigner dans les équipes sur qui connait / utilise PowerBI
+* [ ] **PP** Comment s'appuyer sur GITHUB et IA pour convertir la fonction visualisation interactive en application HTML
+  
+* **4. Mockup sur une application permettant d'enrichir le carnet de vol utilisateur avec des informations contextuels du jour
 
 > [!WARNING]
 > Définition de Prototype : une solution utilisable dans la vie réelle , développement rapide. Pas de regret si cela ne fonctionne pas. Nécessite souvent une réécriture pour passer au stade industriel
