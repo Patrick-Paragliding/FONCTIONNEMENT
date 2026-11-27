@@ -53,5 +53,8 @@ Pour éviter de devoir faire défiler toute la page pour lire les dernières nou
   * Un "One Pager" pour faciliter la communication
   * Des idées de vulgarisation sur le thème de la gestion de données qui est au coeur de ce processus
     
-* **4. Mockup sur une application permettant d'alimenter à l'utilisateur de 'signer' son vol
+* **4. Mockup sur une application permettant d'alimenter à l'utilisateur de 'signer' son vol**
+
+> [!WARNING]
+> Définition de Prototype : une solution utilisable dans la vie réelle , développement rapide. Pas de regret si cela ne fonctionne pas. Nécessite souvent une réécriture pour passer au stade industriel
 
