@@ -1,0 +1,42 @@
+
+# Comprendre l'architecture des données : l'analogie du Restaurant
+
+Pourquoi ne donne-t-on pas accès directement aux fichiers bruts à tout le monde ? Pourquoi faut-il « nettoyer » et « préparer » les données avant de les afficher dans un tableau de bord ou une application ?
+
+Pour comprendre le fonctionnement d'un projet de données (collecte, traitement, mise à disposition), le plus simple est de le comparer à **un grand restaurant**.
+
+---
+
+## 1. De la livraison brute à l'assiette : le parcours de la donnée
+
+| Étape technique (Data) | Équivalent au Restaurant | Ce qui se passe concrètement |
+| :--- | :--- | :--- |
+| **Sources de données**<br>*(fichiers bruts, exports, capteurs, formulaires)* | **Les fournisseurs & producteurs**<br>*(maraîcher, poissonnier, grossiste)* | La matière première arrive sous toutes les formes : cagettes pleines de terre, cartons en vrac, emballages hétérogènes. |
+| **Collecte & Stockage brut**<br>*(Ingestion / Couche Bronze)* | **Le quai de livraison & la réserve** | On réceptionne tout et on le stocke tel quel en chambre froide, sans rien jeter ni modifier, pour garder une trace fidèle de ce qui a été livré. |
+| **Nettoyage & Normalisation**<br>*(ETL / Couche Silver)* | **La plonge, l'épluchage & la mise en place** | On lave, on épluche, on écarte les produits abîmés et on découpe en morceaux standards (ex. : dates au même format, suppression des doublons). |
+| **Calculs & Croisements métier**<br>*(Modélisation / Couche Gold)* | **La cuisine (le Chef & sa brigade)** | On assemble et on cuisine les ingrédients préparés selon des recettes précises (règles de calcul, indicateurs) pour créer des plats cohérents. |
+| **Exposition de la donnée**<br>*(Tableaux de bord, applis, fichiers finaux)* | **Le passe-plat & la salle (*Data Dining Room*)** | Le serveur apporte l'assiette dressée à table. Le convive déguste directement sans jamais avoir à entrer en cuisine ni éplucher ses légumes. |
+| **Documentation & Règles**<br>*(Catalogue & Gouvernance)* | **Le menu, les allergènes & l'hygiène** | Explique ce que contient chaque plat, d'où viennent les produits, qui a le droit d'entrer en cuisine et garantit la fiabilité de l'ensemble. |
+
+---
+
+## 2. Les 3 règles d'or illustrées par cette image
+
+> [!IMPORTANT]
+> **1. On ne fait pas entrer les clients en cuisine**
+> Laisser les utilisateurs piocher directement dans les fichiers bruts ou les scripts de calcul est risqué : ils peuvent se brûler (faire des erreurs d'interprétation), ralentir la brigade ou consommer un produit encore cru. La **salle de restaurant** (l'application ou le tableau de bord) est pensée pour le confort et la clarté ; la **cuisine** (les traitements informatiques) est optimisée pour la préparation.
+
+> [!NOTE]
+> **2. On ne jette jamais la matière première**
+> Si une recette est ratée ou qu'un convive demande un nouveau plat, le chef retourne chercher les ingrédients d'origine dans **la réserve** plutôt que de rappeler le fournisseur à l'autre bout du pays. C'est pour cela qu'on conserve toujours une copie intacte des fichiers d'origine.
+
+> [!TIP]
+> **3. La carte du restaurant protège le client des changements en cuisine**
+> Si le chef change de fournisseur de tomates ou achète un nouveau four en cuisine, le client en salle doit toujours recevoir la même salade au menu. En informatique, tant que le format final exposé est respecté, on peut améliorer les calculs internes sans casser les outils des utilisateurs.
+
+---
+
+## 3. En résumé : qui travaille où ?
+
+* **En réserve et en cuisine (Backend / Scripts) :** les développeurs et mainteneurs qui collectent, vérifient, nettoient et calculent les indicateurs.
+* **En salle de restaurant (Frontend / Applications / Rapports) :** les utilisateurs, testeurs et décideurs qui consultent des informations propres, lisibles et prêtes à l'emploi.
