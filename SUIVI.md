@@ -60,6 +60,12 @@ Pour éviter de devoir faire défiler toute la page pour lire les dernières nou
   
 * **4. Mockup sur une application permettant d'enrichir le carnet de vol utilisateur avec des informations contextuels du jour
 
+* **5. Outil d'analyse pour l'entraineur **
+* 1. Enrichissement et Signature d'un vol à partir de la trace IGC (la partie stats du vol de XCANALYTICS
+  2. Outil d'analyse interactive pour l'entraineur sur l'ensemble des vols, des pilotes
+* * **Suivi :**
+* [ ] **Zey** En parler avec les membres de l'équipe PIDF Perf (éventuellement capturer le détail des formules de XCAnalytics - par forcément reproduire à l'identique).
+
 > [!WARNING]
 > Définition de Prototype : une solution utilisable dans la vie réelle , développement rapide. Pas de regret si cela ne fonctionne pas. Nécessite souvent une réécriture pour passer au stade industriel
 
